@@ -177,6 +177,15 @@ section { padding: 96px 0; position: relative; }
     font-size: 64px;
 }
 
+.about-image { position: relative; }
+.profile-photo {
+    width: 260px; height: 260px; object-fit: cover; border-radius: var(--radius);
+    display: block; border: 1px solid rgba(255,255,255,0.06); box-shadow: var(--shadow);
+    background: #0b0e13;
+}
+/* Hide placeholder when image loads; it will be shown via onerror inline handler */
+.about-image .profile-placeholder { display: none; }
+
 .about-bio { color: #cfd6df; }
 
 .education h3, .coursework h3 { margin: 22px 0 10px; font-size: 18px; color: var(--text); }
